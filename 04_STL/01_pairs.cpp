@@ -5,8 +5,10 @@
 using namespace std;
 
 int main(){
-    //initializing
+    //declaration
     pair <int, int> p;
+
+    //initialization
     p={1,3};
     
     //accessing
