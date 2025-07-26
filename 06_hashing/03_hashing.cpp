@@ -21,9 +21,12 @@ int main(){
         mpp[arr[i]]++;
     }
 
-    //iterating to get the map
+    //iterating to get the map to get the highest 
+    pair <int, int>highest = {0,0};
+    
     for(auto it:mpp){
-        cout<<it.first<<" -> "<<it.second<<endl;
+        if (it.second>=highest.second) highest = it;
+        
     }
 
 
@@ -36,6 +39,7 @@ int main(){
         cout<<mpp[number]<<endl;
     }
 
+    cout<<"number with highest frequency is: "<<highest.first<<endl;
     
     return 0;
 }
