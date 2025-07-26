@@ -1,3 +1,4 @@
+//exclusive upper or lower case
 #include <iostream>
 #include <bits/stdc++.h>
 
@@ -7,7 +8,6 @@ int main(){
     string s;
     cin>>s;
     
-
     //precomputing
     int hash[26] = {0};
     for(int i=0; i<s.size(); i++){
@@ -22,7 +22,6 @@ int main(){
         //fetching
         cout<<hash[ch-'a']<<endl;
     }
-
 
     return 0;
 }
