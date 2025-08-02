@@ -18,7 +18,9 @@ int main(){
         for(int j=i; j<=n-1; j++){
             if(inputArr[j] > inputArr[highest]) highest = j;
         }
-        swap(inputArr[i], inputArr[highest]);
+        int temp = inputArr[highest];
+        inputArr[highest] = inputArr[i];
+        inputArr[i] = temp;
     }
 
     for(int i=0; i<n; i++){
